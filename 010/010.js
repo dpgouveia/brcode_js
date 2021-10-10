@@ -21,20 +21,34 @@ if(grade == "A") {
 
 
 console.log("\nCoded multiple else if statements with switch clause");
-var grade = "f";
+var grade = "PIZZA";
 grade = grade.toUpperCase();
 console.log("Grade value: " + grade);
-if(grade == "d") { 
-	console.log("You did great!");	
-} else if (grade == "B") {
-	console.log("You did good!");
-} else if (grade == "C") {
-	console.log("You did okay!");
-} else if (grade == "D") {
-	console.log("You... did not do that well!");
-} else if (grade == "F") {
-	console.log("YOU FAILED!");
-} else {
-	console.log(grade + ", is not a valid grade!");
-}
 
+switch(grade) {
+	case "A": {
+		console.log("You did great!");
+		break;		
+	}
+	case "B": {
+		console.log("You did good!");
+		break;		
+	}
+	case "C": {
+		console.log("You did okay!");
+		break;		
+	}
+	case "D": {
+		console.log("You... did not do that well!");
+		break;		
+	}
+	case "F": {
+		console.log("YOU FAILED!");
+		break;		
+	}
+	default: {
+		console.log(grade + ", is not a valid grade!");
+		break;
+	}
+	
+}
